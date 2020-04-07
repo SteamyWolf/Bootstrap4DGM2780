@@ -1,0 +1,25 @@
+.carousel .carousel-item {
+  height: 600px; }
+
+.carousel-item img {
+  height: 600px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px; }
+
+.my-rooms-container .my-rooms-row {
+  border: 2px solid red; }
+  .my-rooms-container .my-rooms-row .col {
+    border: 1px dotted blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .my-rooms-container .my-rooms-row .col figure {
+      width: 250px;
+      height: 299px; }
+      .my-rooms-container .my-rooms-row .col figure img {
+        width: 100%; }
+
+/*# sourceMappingURL=styles.css.map */

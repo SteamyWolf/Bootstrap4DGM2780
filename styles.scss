@@ -1,0 +1,39 @@
+// ------VARIABLES -----//
+$gutter: 16px;
+
+
+
+
+// ------CAROUSEL -----//
+.carousel .carousel-item {
+    height: 600px;
+  }
+  
+  .carousel-item img {
+      height: 600px;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 300px;
+  }
+
+  // ------ ROOMS -----//
+.my-rooms-container {
+    .my-rooms-row {
+        border: 2px solid red;
+        .col {
+            border: 1px dotted blue;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            figure {
+                width: 250px;
+                height: 299px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
