@@ -2,63 +2,130 @@
 $gutter: 16px;
 
 html {
-    max-width: 1400px;
-    margin: auto;
+  max-width: 1400px;
+  margin: auto;
 }
-
 
 // ------CAROUSEL -----//
 .carousel .carousel-item {
-    height: 600px;
-  }
-  
-  .carousel-item img {
-      height: 600px;
-      object-fit: cover;
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-height: 300px;
-  }
+  height: 600px;
+}
 
-  // ------ ROOMS -----//
-#spaRoomsH2 {
-    margin: 40px $gutter;
+.carousel-item img {
+  height: 600px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
+}
+
+// ------ ROOMS -----//
+#spaRoomsH3,
+#spaLocationH3 {
+  margin: 40px $gutter;
 }
 .my-rooms-container {
-    .my-rooms-row {
-        border: 2px solid red;
-        .my-rooms-col {
-            border: 1px dotted blue;
-            display: flex;
-            justify-content: center;
-            padding: 5px;
-            figure {
-                width: 167px;
-                height: 200px;
-                img {
-                    width: 100%;
-                }
-            }
+  .my-rooms-row {
+    border: 2px solid red;
+    .my-rooms-col {
+      border: 1px dotted blue;
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+      figure {
+        width: 167px;
+        height: 200px;
+        img {
+          width: 100%;
         }
+      }
     }
+  }
 }
 
+// ------ SPA LINKS -----//
+.spaLink1,
+.spaLink2 {
+  padding: 20px $gutter;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    float: left;
+    text-decoration: none;
+  }
+  img {
+    width: 10px;
+    height: 10px;
+    float: right;
+  }
+}
 
-  // ------ SPA LINKS -----//
-.spaLink1, .spaLink2 {
-    padding: 20px $gutter;
+// ------ SPA LOCATIONS -----//
+.spaLocationsCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .my-location-card {
+    margin-bottom: 25px;
+  }
+}
+
+// ------ SPA PANEL -----//
+.spaPanel {
+  width: 100vw;
+  height: 40vh;
+  background-image: url(/images/spaPanel.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h4 {
+    color: white;
+  }
+  p {
+    color: white;
+  }
+}
+
+// ------ FOOTER -----//
+footer {
+  .logoFooter {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    a {
-        float: left;
-        text-decoration: none;
+    figure {
+      width: 150px;
+      height: 150px;
+      img {
+        width: 100%;
+      }
     }
-    img {
-        width: 10px;
-        height: 10px;
-        float: right;
+  }
+  .footer-container {
+    .row {
+      .my-footer-col {
+        text-align: center;
+        p {
+            font-size: 1.2rem;
+            color: blue;
+        }
+      }
+    }
+  }
+  p {
+      text-align: center;
+  }
+}
+.footer-container-2 {
+    .row {
+        .col {
+            p {
+                color: blue;
+            }
+        }
     }
 }

@@ -13,7 +13,8 @@ html {
   left: 0;
   min-height: 300px; }
 
-#spaRoomsH2 {
+#spaRoomsH3,
+#spaLocationH3 {
   margin: 40px 16px; }
 
 .my-rooms-container .my-rooms-row {
@@ -29,18 +30,62 @@ html {
       .my-rooms-container .my-rooms-row .my-rooms-col figure img {
         width: 100%; }
 
-.spaLink1, .spaLink2 {
+.spaLink1,
+.spaLink2 {
   padding: 20px 16px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
-  .spaLink1 a, .spaLink2 a {
+  .spaLink1 a,
+  .spaLink2 a {
     float: left;
     text-decoration: none; }
-  .spaLink1 img, .spaLink2 img {
+  .spaLink1 img,
+  .spaLink2 img {
     width: 10px;
     height: 10px;
     float: right; }
+
+.spaLocationsCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .spaLocationsCards .my-location-card {
+    margin-bottom: 25px; }
+
+.spaPanel {
+  width: 100vw;
+  height: 40vh;
+  background-image: url(/images/spaPanel.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .spaPanel h4 {
+    color: white; }
+  .spaPanel p {
+    color: white; }
+
+footer .logoFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  footer .logoFooter figure {
+    width: 150px;
+    height: 150px; }
+    footer .logoFooter figure img {
+      width: 100%; }
+footer .footer-container .row .my-footer-col {
+  text-align: center; }
+  footer .footer-container .row .my-footer-col p {
+    font-size: 1.2rem;
+    color: blue; }
+footer p {
+  text-align: center; }
+
+.footer-container-2 .row .col p {
+  color: blue; }
 
 /*# sourceMappingURL=styles.css.map */
