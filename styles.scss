@@ -1,7 +1,10 @@
 // ------VARIABLES -----//
 $gutter: 16px;
 
-
+html {
+    max-width: 1400px;
+    margin: auto;
+}
 
 
 // ------CAROUSEL -----//
@@ -19,21 +22,43 @@ $gutter: 16px;
   }
 
   // ------ ROOMS -----//
+#spaRoomsH2 {
+    margin: 40px $gutter;
+}
 .my-rooms-container {
     .my-rooms-row {
         border: 2px solid red;
-        .col {
+        .my-rooms-col {
             border: 1px dotted blue;
             display: flex;
-            flex-direction: row;
             justify-content: center;
+            padding: 5px;
             figure {
-                width: 250px;
-                height: 299px;
+                width: 167px;
+                height: 200px;
                 img {
                     width: 100%;
                 }
             }
         }
+    }
+}
+
+
+  // ------ SPA LINKS -----//
+.spaLink1, .spaLink2 {
+    padding: 20px $gutter;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    a {
+        float: left;
+        text-decoration: none;
+    }
+    img {
+        width: 10px;
+        height: 10px;
+        float: right;
     }
 }

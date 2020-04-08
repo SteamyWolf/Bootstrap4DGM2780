@@ -1,3 +1,7 @@
+html {
+  max-width: 1400px;
+  margin: auto; }
+
 .carousel .carousel-item {
   height: 600px; }
 
@@ -9,17 +13,34 @@
   left: 0;
   min-height: 300px; }
 
+#spaRoomsH2 {
+  margin: 40px 16px; }
+
 .my-rooms-container .my-rooms-row {
   border: 2px solid red; }
-  .my-rooms-container .my-rooms-row .col {
+  .my-rooms-container .my-rooms-row .my-rooms-col {
     border: 1px dotted blue;
     display: flex;
-    flex-direction: row;
-    justify-content: center; }
-    .my-rooms-container .my-rooms-row .col figure {
-      width: 250px;
-      height: 299px; }
-      .my-rooms-container .my-rooms-row .col figure img {
+    justify-content: center;
+    padding: 5px; }
+    .my-rooms-container .my-rooms-row .my-rooms-col figure {
+      width: 167px;
+      height: 200px; }
+      .my-rooms-container .my-rooms-row .my-rooms-col figure img {
         width: 100%; }
+
+.spaLink1, .spaLink2 {
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .spaLink1 a, .spaLink2 a {
+    float: left;
+    text-decoration: none; }
+  .spaLink1 img, .spaLink2 img {
+    width: 10px;
+    height: 10px;
+    float: right; }
 
 /*# sourceMappingURL=styles.css.map */
