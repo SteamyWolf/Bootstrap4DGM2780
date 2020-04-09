@@ -17,18 +17,22 @@ html {
 #spaLocationH3 {
   margin: 40px 16px; }
 
-.my-rooms-container .my-rooms-row {
-  border: 2px solid red; }
-  .my-rooms-container .my-rooms-row .my-rooms-col {
-    border: 1px dotted blue;
-    display: flex;
-    justify-content: center;
-    padding: 5px; }
-    .my-rooms-container .my-rooms-row .my-rooms-col figure {
-      width: 167px;
-      height: 200px; }
-      .my-rooms-container .my-rooms-row .my-rooms-col figure img {
-        width: 100%; }
+.my-rooms-container .my-rooms-row .my-rooms-col {
+  display: flex;
+  justify-content: center;
+  padding: 5px; }
+  .my-rooms-container .my-rooms-row .my-rooms-col figure {
+    width: 167px;
+    height: 200px; }
+    .my-rooms-container .my-rooms-row .my-rooms-col figure img {
+      width: 100%; }
+
+.spaLink1 {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey; }
+
+.spaLink2 {
+  border-bottom: grey 1px solid; }
 
 .spaLink1,
 .spaLink2 {
@@ -46,6 +50,13 @@ html {
     width: 10px;
     height: 10px;
     float: right; }
+
+.locationsDiv {
+  display: flex;
+  flex-direction: row; }
+  .locationsDiv a {
+    align-self: flex-end;
+    padding-bottom: 40px; }
 
 .spaLocationsCards {
   display: flex;
@@ -68,24 +79,87 @@ html {
   .spaPanel p {
     color: white; }
 
-footer .logoFooter {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  footer .logoFooter figure {
-    width: 150px;
-    height: 150px; }
-    footer .logoFooter figure img {
-      width: 100%; }
-footer .footer-container .row .my-footer-col {
-  text-align: center; }
-  footer .footer-container .row .my-footer-col p {
-    font-size: 1.2rem;
-    color: blue; }
-footer p {
-  text-align: center; }
+footer {
+  margin-top: 40px; }
+  footer .logoFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    footer .logoFooter figure {
+      width: 150px;
+      height: 150px; }
+      footer .logoFooter figure img {
+        width: 100%; }
+  footer .footer-container .row .my-footer-col {
+    text-align: center; }
+    footer .footer-container .row .my-footer-col p {
+      font-size: 1.2rem;
+      color: blue; }
+  footer p {
+    text-align: center; }
 
 .footer-container-2 .row .col p {
-  color: blue; }
+  color: blue;
+  font-size: 0.8rem;
+  margin: 0px 10px 10px; }
+
+@media only screen and (min-width: 768px) {
+  .spaLocationsCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .spaLocationsCards .my-location-card {
+      margin: 20px 10px; } }
+.spaPanel {
+  width: 100vw;
+  height: 40vh;
+  background-image: url(/images/spaPanel.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 16px; }
+  .spaPanel h4 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 100; }
+  .spaPanel p {
+    color: white;
+    font-weight: 100; }
+  .spaPanel button {
+    padding: 7px 45px; }
+
+@media only screen and (min-width: 1080px) {
+  .spaLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+
+  .spaLink1 {
+    border-top: none;
+    border-bottom: none; }
+
+  .spaLink2 {
+    border-bottom: none; }
+
+  .spaLink1,
+  .spaLink2 {
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .spaLink1 a,
+    .spaLink2 a {
+      float: left;
+      text-decoration: none;
+      font-size: 1.3rem; }
+    .spaLink1 img,
+    .spaLink2 img {
+      width: 10px;
+      height: 10px;
+      float: right;
+      padding-right: 30px; } }
 
 /*# sourceMappingURL=styles.css.map */
