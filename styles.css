@@ -161,5 +161,70 @@ footer {
       height: 10px;
       float: right;
       padding-right: 30px; } }
+header {
+  background-image: url(https://www.fontainebleau.com/fontainebleau/908/21/hp-hero-01.jpg);
+  background-size: cover;
+  height: 400px;
+  width: 100vw; }
+  header .headerInfo .row {
+    height: 400px; }
+    header .headerInfo .row .my-col-about-header {
+      text-align: center;
+      color: white; }
+
+.aboutHead {
+  display: flex;
+  flex-direction: row; }
+  .aboutHead img {
+    height: 100px;
+    width: 100px; }
+  .aboutHead h2 {
+    margin-top: 30px;
+    font-size: 1.3rem;
+    font-weight: 100;
+    padding-top: 5px; }
+
+.aboutP {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 37px; }
+
+.my-container-about-cards .my-row-about-cards .my-about-cards-col {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 15px; }
+
+.my-card {
+  height: 282px; }
+
+.contactHeader {
+  background-image: url(https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+  background-size: cover;
+  height: 400px;
+  width: 100vw; }
+  .contactHeader .headerInfo .row {
+    height: 400px; }
+    .contactHeader .headerInfo .row .my-col-about-header {
+      text-align: center;
+      color: black; }
+
+.contactFormH3 {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: row; }
+  .contactFormH3 img {
+    width: 100px;
+    height: 100px; }
+  .contactFormH3 h3 {
+    align-self: center;
+    font-size: 1.3rem;
+    font-weight: 100; }
+
+.contactP {
+  margin-left: 16px; }
+
+form {
+  margin-left: 16px; }
 
 /*# sourceMappingURL=styles.css.map */
